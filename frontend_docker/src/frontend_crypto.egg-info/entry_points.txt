@@ -1,0 +1,3 @@
+[console_scripts]
+start-front = frontend_crypto:start_app
+

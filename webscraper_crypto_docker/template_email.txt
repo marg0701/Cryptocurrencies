@@ -1,0 +1,12 @@
+Dear ${person_name},
+
+Hello, I hope you are fine. I want to inform
+you there has been an anomaly on the prediction
+of the BET application, if you want to know more,
+please sign in to your account and take a look
+on "Profile" section.
+
+Have an excellent weekend.
+
+Greets,
+BET application team.

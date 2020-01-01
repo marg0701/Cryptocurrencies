@@ -1,0 +1,20 @@
+Metadata-Version: 1.2
+Name: frontend-crypto
+Version: 0.0.1
+Summary: Flask example
+Home-page: UNKNOWN
+Author: Fernando Herrera
+Author-email: fernandoj.herrera@softtek.com
+License: MIT
+Description: Flask example
+        --------
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT Licence
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7

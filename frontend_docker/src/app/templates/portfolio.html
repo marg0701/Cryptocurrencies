@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+<head>
+
+<!-- <style>
+  p.small {
+    line-height: 0.7;
+  }
+
+  p.big {
+    line-height: 1.8;
+  }
+</style> -->
+
+<title>Portfolio information</title>
+  <!-- Scripts -->
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+    <script type="text/javascript"
+      src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+    </head>
+
+<body>
+  {{ graph | safe }}
+  <div style="float: left; width: 50%;">
+    <h2 style="margin-bottom:2ex"> Optimal Portfolio </h2>
+    {% for coin in coins %}
+      <p style="font-size:30px">
+      {% if coin=='ethereum' %}
+        <img src="{{url_for('static', filename='eth.svg')}}" width="80px">
+      {% elif coin=='iota' %}
+        <img src="{{url_for('static', filename='miota.svg')}}" width="80px">
+      {% elif coin=='ripple' %}
+        <img src="{{url_for('static', filename='rpp.svg')}}" width="80px">
+      {% elif coin=='bitcoin' %}
+        <img src="{{url_for('static', filename='btc.svg')}}" width="80px">
+      {% elif coin=='bitcoin_cash' %}
+        <img src="{{url_for('static', filename='bch.svg')}}" width="80px">
+      {% elif coin=='litecoin' %}
+        <img src="{{url_for('static', filename='ltc.svg')}}" width="80px">
+      {% endif %}
+      {{ weights[coin]*100 }} %</p>
+    {% endfor %}
+  </div>
+  <div style="float: left; width: 50%;">
+    <h2 style="margin-bottom:2ex"> Performance </h2>
+    <p style="font-size:20px"> Expected Annual Return: {{ performance['Return']*100 }}%</p>
+    <p style="font-size:20px"> Annual Volatility: {{ performance['Volatility'] }}</p>
+    <p style="font-size:20px"> Sharpe Ratio: {{ performance['Sharpe Ratio'] }}</p>
+  </div>
+
+</body>
+</html>

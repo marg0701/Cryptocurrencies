@@ -1,0 +1,21 @@
+Metadata-Version: 1.2
+Name: timeseries-model
+Version: 0.0.1
+Summary: Here we used Facebook prophet in order to study timeseries for different cryptocurrencies
+Home-page: UNKNOWN
+Author: Miguel Ramírez & Uzmar Gómez
+Author-email: mramirez@softtek.com & uzmar.gomez@softtek.com
+License: MIT
+Description: # Implementation of the timeseries model
+        
+        Here we used Facebook prophet in order to make timeseries for different cryptocurrencies
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT Licence
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7

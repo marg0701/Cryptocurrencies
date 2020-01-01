@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+<head>
+
+<!-- <style>
+  p.small {
+    line-height: 0.7;
+  }
+
+  p.big {
+    line-height: 1.8;
+  }
+</style> -->
+
+  <style>
+    .img-container {
+      text-align: center;
+    }
+  </style>
+
+<title>About</title>
+  <!-- Scripts -->
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+    <script type="text/javascript"
+      src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+    </head>
+
+<body>
+<h2 style="margin-bottom:3ex">Timeseries Algorithm: A brief introduction to Facebook Prophet</h2>
+
+<font size="+1">
+
+This api uses the Facebook Prophet algorithm. For full documentation, please visit
+the following <a href="http://facebook.github.io/prophet/" target="_blank" style="color: #cc0000">link</a>.
+Also, in this <a href="https://peerj.com/preprints/3190/" target="_blank" style="color: #cc0000">link</a> you can read the article that describes the algorithm.
+<br>
+<br>
+Here is a brief summary of the above article, named <i>Forecasting at Scale</i>, by authors Sean J. Taylor and Benjamin Letham.
+<br>
+<br>
+<h3 style="margin-bottom:2ex">Why Facebook Prophet?</h3>
+
+As you can see in this <a href="https://towardsdatascience.com/predicting-prices-of-bitcoin-with-machine-learning-3e83bb4dd35f" target="_blank" style="color: #cc0000">link</a>,
+there is a problem when using SARIMA modeling when it wants to predict prices of cryptocurrencies, meaning
+that the confidence intervals are too big and, of course, the predicted values lie inside them, but that means
+the predictions are not very accurate.
+<br>
+<br>
+That's the main difference with Facebook Prophet, as the latter uses a forecasting model that gives a more
+precise prediction and allows, in the particular case of cryptocurrencies, to have more security regarding
+the investments of the people using this algorithm.
+<br>
+<br>
+<h3 style="margin-bottom:2ex">How it works?</h3>
+
+The algorithm uses a decomposable time series model with three main components:
+<ul>
+  <li> Trend $g(t)$. Represents non-periodic changes in the value of the time series.
+    <br>
+    <br>
+  <li> Seasonality $s(t)$. Represents periodic changes, such as weekly and yearly seasonality.
+    <br>
+    <br>
+  <li> Holidays $h(t)$. Represents the effects of holidays.
+    <br>
+    <br>
+</ul>
+Combined they are represented by the following equation
+
+
+$$y(t) = g(t) + s(t) + h(t) + \epsilon_t$$
+
+
+where the error term $\epsilon_t$ represents any idiosyncratic changes which are not accommodated by the model. This error
+is assumed to be normally distributed.
+<br>
+<br>
+Modeling seasonality as an additive component is the
+same approach taken by exponential smoothing, and multiplicative seasonality,
+where the seasonal effect is a factor that multiplies $g(t)$, can be accomplished through a
+log transform.
+<br>
+<br>
+
+There are two main models, a saturating growth model and a piecewise linear model. The nonlinear model
+is similar to population growth, and is typically modeled using logistic growth model, which makes
+the trend function have the simple form
+
+$$g(t) = \frac{C}{1+\exp\left[-k(t-m)\right]}$$
+
+where $C$ is the carrying capacity, $k$ the growth rate and $m$ an offset parameter. The capacity
+and growth rate can't be constant in general, they depend on time
+
+$$g(t) = \frac{C(t)}{1+\exp\left(-\left(k+a(t)^T \delta\right)\left[t-\left(m+a(t)^T \gamma\right)\right]\right)}$$
+
+$$g(t) = \left[k+a(t)^T \delta\right]t + \left[m+a(t)^T \gamma\right]$$
+
+$$s(t)=\sum_{n=1}^{N}\left[ a_n\cos\left(\frac{2\pi n t}{P}\right) + b_n\sin\left(\frac{2\pi n t}{P}\right)\right]$$
+
+<h2 style="margin-bottom:3ex">App Arquitecture</h2>
+<div class="img-container">
+  <img src="{{url_for('static', filename='bitmap.png')}}"  style="width: 50%; height: 50%;" />
+</div>
+
+</font>
+</body>
+</html>

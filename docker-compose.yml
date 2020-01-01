@@ -1,0 +1,98 @@
+version: "3"
+
+services:
+
+    login:
+      build:
+        context: ./login
+        dockerfile: Dockerfile
+      command: start-login
+      ports:
+        - "5001:5001"
+        
+    frontend:
+      build:
+        context: ./frontend_docker
+        dockerfile: Dockerfile
+      volumes:
+        - app_data:/appdata:ro
+      command: start-front
+      ports:
+         - "5000:5000"
+
+    timeseries:
+      build:
+        context: ./timeseries_docker
+        dockerfile: Dockerfile
+      depends_on:
+        - wshist
+      volumes:
+        - app_data:/appdata:rw
+      command: start-timeseries
+
+    wscrypto:
+      build:
+        context: ./webscraper_crypto_docker
+        dockerfile: Dockerfile
+      depends_on:
+        - sqls
+      command: start-webscraper_crypto
+
+    wshist:
+      build:
+        context: ./webscraper_hist_docker
+        dockerfile: Dockerfile
+      depends_on:
+        - sqls
+      command: start-webscraper_hist
+
+    wsnews:
+      build:
+        context: ./webscraper_news_docker
+        dockerfile: Dockerfile
+      depends_on:
+        - mongos
+      command: start-webscraper_news
+
+    portfolio:
+      build:
+        context: ./portfolio_docker
+        dockerfile: Dockerfile
+      depends_on:
+        - wshist
+      volumes:
+        - app_data:/appdata:rw
+      command: start-portfolio
+
+    mongos:
+      build:
+        context: ./mongo_service_docker
+        dockerfile: Dockerfile
+      depends_on:
+        - db_mongo
+      command: start-service
+
+    db_sql:
+      image: mysql:5.7
+      ports:
+        - "3306:3306"
+      environment:
+        - MYSQL_ROOT_PASSWORD=secret
+        - MYSQL_DB_USERNAME=root
+
+    sqls:
+      build:
+        context: ./sql_service_docker
+        dockerfile: Dockerfile
+      depends_on:
+        - db_sql
+      command: start-sql_service
+
+    db_mongo:
+      image: mongo
+      ports:
+        - "27017:27017"    
+
+volumes:
+  app_data:
+    driver: local

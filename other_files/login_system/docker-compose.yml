@@ -1,0 +1,26 @@
+version: "3"
+
+services:
+    login:
+      build:
+        context: ./login
+        dockerfile: Dockerfile
+      command: start-login
+      ports:
+        - "5001:5001"
+
+    sql_service:
+      build:
+        context: ./sql_service
+        dockerfile: Dockerfile
+      command: start-sql_service
+
+    db_sql:
+      image: mysql:5.7
+      ports:
+        - "3306:3306"
+      environment:
+        - MYSQL_ROOT_PASSWORD=secret
+        - MYSQL_DB_USERNAME=root
+    
+

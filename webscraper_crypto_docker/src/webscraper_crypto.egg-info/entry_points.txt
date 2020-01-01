@@ -1,0 +1,3 @@
+[console_scripts]
+start-webscraper_crypto = webscraper_crypto_docker:webscraper_crypto_app
+

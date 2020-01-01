@@ -1,0 +1,37 @@
+<h1> Cryptocurrencies graphs </h1>
+
+<li class="nav-item">
+  <select class="custom-select custom-select-lg mb-3" id="mydropdown" onchange="graphselect()">
+    <option value="bitcoin" selected>Bitcoin</option>
+    <option value="ethereum">Ethereum</option>
+    <option value="ripple">Ripple</option>
+    <option value="litecoin">Litecoin</option>
+    <option value="iota">IOTA</option>
+    <option value="bitcoin_cash">Bitcoin-Cash</option>
+  </select>
+</li>
+
+<div class="col">
+  <div class="row">
+    <div class="container" id="page-content-2">
+    </div>
+  </div>
+</div>
+
+
+<script>
+  function graphselect() {
+    var value = $('#mydropdown').val();
+    console.log(value)
+    $.ajax({
+                type: "GET",
+                contentType: "application/json",
+                url: "http://localhost:5000/home/"+value,
+                dataType : "json",
+                success : function(result) {
+                    console.log("ok");
+                    $("#page-content-2").html(result["html"]);
+                }
+            });
+  }
+</script>

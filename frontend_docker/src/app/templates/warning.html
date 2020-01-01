@@ -1,0 +1,9 @@
+{% for new in news %}
+    <div class="card" style="width: 54rem;">
+        <div class="card-body">
+          <h5 class="card-title">{{ new["title"] }}</h5>
+          <p class="card-text">{{ new["content"][:200] }}</p>
+          <a href="{{ new["url"] }}" class="btn btn-primary">Go to link</a>
+        </div>
+    </div>
+{% endfor %}

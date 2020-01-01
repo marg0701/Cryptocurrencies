@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="Layer_1"
+   data-name="Layer 1"
+   viewBox="0 0 196.20866 212.80966"
+   version="1.1"
+   sodipodi:docname="rpp.svg"
+   width="196.20866"
+   height="212.80966"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
+  <metadata
+     id="metadata28">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>Ripple_logo_RGB</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     id="namedview26"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="0.39963065"
+     inkscape:cx="436.65276"
+     inkscape:cy="101.73343"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="Layer_1" />
+  <defs
+     id="defs7">
+    <linearGradient
+       id="linear-gradient"
+       x1="83.681999"
+       y1="72.488297"
+       x2="231.177"
+       y2="219.9832"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(-28.347239,-39.830776)">
+      <stop
+         offset="0"
+         stop-color="#00aae4"
+         id="stop2" />
+      <stop
+         offset="1"
+         stop-color="#006097"
+         id="stop4" />
+    </linearGradient>
+  </defs>
+  <title
+     id="title9">Ripple_logo_RGB</title>
+  <path
+     d="m 173.98466,129.87032 c -7.5243,-4.3445 -15.9976,-5.6037 -24.3906,-5.8968 -7.0417,-0.2459 -17.5476,-4.7583 -17.5476,-17.5681 0,-9.544096 7.7369,-17.225196 17.5512,-17.567896 8.3923,-0.2931 16.8648,-1.5539 24.387,-5.8969 a 44.4477,44.4477 0 1 0 -66.6714,-38.4914 c 0,8.6117 3.0629,16.5366 6.9711,23.8868 3.287,6.182 4.95,17.6559 -6.3235,24.1644 -8.386199,4.8418 -18.852299,1.776 -24.079999,-6.5905 -4.4158,-7.0666 -9.7464,-13.6878 -17.2095,-17.9974 a 44.4475,44.4475 0 1 0 0,76.985196 c 7.461,-4.308 12.7921,-10.9249 17.2051,-17.9872 3.6238,-5.7993 12.6743,-13.1915 24.083999,-6.5992 8.3734,4.838 10.962,15.4379 6.32,24.1688 -3.9076,7.3491 -6.9666,15.2723 -6.9666,23.8825 a 44.4471,44.4471 0 1 0 66.6708,-38.4923 z"
+     style="fill:url(#linear-gradient)"
+     id="path23"
+     inkscape:connector-curvature="0" />
+</svg>

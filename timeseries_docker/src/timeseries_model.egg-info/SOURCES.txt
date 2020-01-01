@@ -1,0 +1,17 @@
+Dockerfile
+MANIFEST.in
+README.md
+setup.py
+src/timeseries/__init__.py
+src/timeseries/__pycache__/__init__.cpython-37.pyc
+src/timeseries_docker/__init__.py
+src/timeseries_docker/__pycache__/__init__.cpython-37.pyc
+src/timeseries_functions/__init__.py
+src/timeseries_functions/__pycache__/__init__.cpython-37.pyc
+src/timeseries_model.egg-info/PKG-INFO
+src/timeseries_model.egg-info/SOURCES.txt
+src/timeseries_model.egg-info/dependency_links.txt
+src/timeseries_model.egg-info/entry_points.txt
+src/timeseries_model.egg-info/not-zip-safe
+src/timeseries_model.egg-info/requires.txt
+src/timeseries_model.egg-info/top_level.txt

@@ -1,0 +1,14 @@
+Dockerfile
+MANIFEST.in
+README.md
+setup.py
+src/webscraper_hist/__init__.py
+src/webscraper_hist.egg-info/PKG-INFO
+src/webscraper_hist.egg-info/SOURCES.txt
+src/webscraper_hist.egg-info/dependency_links.txt
+src/webscraper_hist.egg-info/entry_points.txt
+src/webscraper_hist.egg-info/not-zip-safe
+src/webscraper_hist.egg-info/requires.txt
+src/webscraper_hist.egg-info/top_level.txt
+src/webscraper_hist_docker/__init__.py
+src/webscraper_hist_functions/__init__.py

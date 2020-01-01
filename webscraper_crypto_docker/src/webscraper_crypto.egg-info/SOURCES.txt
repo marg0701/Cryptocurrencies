@@ -1,0 +1,14 @@
+Dockerfile
+MANIFEST.in
+README.md
+setup.py
+src/webscraper_crypto/__init__.py
+src/webscraper_crypto.egg-info/PKG-INFO
+src/webscraper_crypto.egg-info/SOURCES.txt
+src/webscraper_crypto.egg-info/dependency_links.txt
+src/webscraper_crypto.egg-info/entry_points.txt
+src/webscraper_crypto.egg-info/not-zip-safe
+src/webscraper_crypto.egg-info/requires.txt
+src/webscraper_crypto.egg-info/top_level.txt
+src/webscraper_crypto_docker/__init__.py
+src/webscraper_crypto_functions/__init__.py

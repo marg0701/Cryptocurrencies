@@ -1,0 +1,3 @@
+[console_scripts]
+start-login = login_system:start_app
+

@@ -1,0 +1,21 @@
+Metadata-Version: 1.2
+Name: webscraper-hist
+Version: 0.0.1
+Summary: Webscraper for historical info of the cryptocurrencies
+Home-page: UNKNOWN
+Author: Miguel Ramírez & Uzmar Gómez
+Author-email: mramirez@softtek.com & uzmar.gomez@softtek.com
+License: MIT
+Description: # Webscraper for cryptocurrencies
+        
+        Use a webscraper that let us extract historical info about cryptocurrencies.
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT Licence
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7

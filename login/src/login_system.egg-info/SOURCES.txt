@@ -1,0 +1,12 @@
+MANIFEST.in
+README.rst
+setup.py
+src/api/__init__.py
+src/login_system/__init__.py
+src/login_system.egg-info/PKG-INFO
+src/login_system.egg-info/SOURCES.txt
+src/login_system.egg-info/dependency_links.txt
+src/login_system.egg-info/entry_points.txt
+src/login_system.egg-info/not-zip-safe
+src/login_system.egg-info/requires.txt
+src/login_system.egg-info/top_level.txt

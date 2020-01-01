@@ -1,0 +1,3 @@
+[console_scripts]
+start-timeseries = timeseries_docker:timeseries_app
+
