@@ -1,5 +1,5 @@
 flask==1.1.1
 newspaper3k==0.2.8
-requests==2.22.0
+requests==2.31.0
 pymongo==3.9.0
 apscheduler==3.6.3
